@@ -165,7 +165,7 @@ Tarifa final: 178500.0
 
 **Ejecución del proyecto**
 
-![Ejecución del Simulador de Tarifas](docs/evidencia-ejecucion.png)
+![Ejecución del Simulador de Tarifas](docs/ejecucion.png)
 
 **[⬆ Volver al índice](#indice)**
 
