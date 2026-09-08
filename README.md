@@ -187,13 +187,13 @@ Como posibles ampliaciones del proyecto se plantean:
 <a name="desarrollador"></a>
 ## 🎓 Desarrollador
 
-<img src="docs/johana.png" width="120" height="120" style="border-radius: 50%;" alt="Foto de perfil"/>
-
-Proyecto desarrollado como parte de las actividades académicas del programa de Desarrollo de Software Backend de la Fundación Universitaria Compensar.
+<img src="docs/johana.png" width="180" height="180" style="border-radius: 50%;" alt="Foto de perfil"/>
 
 - **Estudiante:** Johana Jazmín Saavedra Tafur
 - **Institución:** Fundación Universitaria Compensar
 - **Proyecto:** Simulador de Tarifas
+
+Proyecto desarrollado como parte de las actividades académicas del programa de Desarrollo de Software Backend de la Fundación Universitaria Compensar.
 
 **[⬆ Volver al índice](#indice)**
 
