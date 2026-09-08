@@ -21,6 +21,7 @@ La lógica de cálculo se encuentra aislada en una clase de servicio (`TarifaSer
 - [Configuración de la tarifa](#configuracion-de-la-tarifa)
 - [Ejemplo de salida](#ejemplo-de-salida)
 - [Evidencias](#evidencias-de-funcionamiento)
+- [Cumplimiento del reto](#cumplimiento-del-reto)
 - [Mejoras futuras](#mejoras-futuras)
 - [Desarrollador](#desarrollador)
 - [Licencia](#licencia)
@@ -168,6 +169,21 @@ Tarifa final: 178500.0
 ![Ejecución del Simulador de Tarifas](docs/ejecucion.png)
 
 **[⬆ Volver al índice](#indice)**
+
+<a name="cumplimiento-del-reto"></a>
+## 📋 Cumplimiento del reto
+
+Este proyecto implementa las anotaciones de Spring solicitadas para el reto, aplicando inyección de dependencias sin usar el operador `new`.
+
+| Anotación | Requisito | Implementación en el proyecto |
+|---|---|---|
+| `@Service` | Declarar la clase con la lógica de negocio y cálculos matemáticos | `TarifaService` contiene el método `calcularTarifa(base, impuesto)`, que aplica la fórmula `base + (base × impuesto)` |
+| `@Component` | Clase de ejecución automática administrada por el ciclo de vida de Spring | `TarifaRunner` implementa `CommandLineRunner`, ejecutándose automáticamente al iniciar la aplicación |
+| `@Autowired` | Inyectar la dependencia del servicio sin usar `new` | `TarifaRunner` inyecta `TarifaService` mediante `@Autowired`, sin instanciarlo manualmente |
+| `@Value` (opcional) | Leer parámetros de configuración desde `application.properties` | `TarifaRunner` lee `tarifa.base` y `tarifa.impuesto` mediante `@Value("${...}")` |
+
+**[⬆ Volver al índice](#indice)**
+
 
 <a name="mejoras-futuras"></a>
 ## 🔮 Mejoras futuras
