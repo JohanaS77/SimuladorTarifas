@@ -10,20 +10,22 @@ El objetivo principal es construir una aplicación en Spring Boot que, al inicia
 
 La lógica de cálculo se encuentra aislada en una clase de servicio (`TarifaService`), gestionada por el contenedor de Spring, mientras que la ejecución y presentación del resultado se realiza mediante un `CommandLineRunner` (`TarifaRunner`) que se dispara automáticamente al levantar la aplicación.
 
+<a name="indice"></a>
 ## 📑 Índice
 
-- [Características principales](#-características-principales)
-- [Cómo funciona el cálculo](#-cómo-funciona-el-cálculo)
-- [Tecnologías utilizadas](#️-tecnologías-utilizadas)
-- [Estructura del proyecto](#-estructura-del-proyecto)
-- [Instalación y ejecución](#️-instalación-y-ejecución)
-- [Configuración de la tarifa](#️-configuración-de-la-tarifa)
-- [Ejemplo de salida](#-ejemplo-de-salida)
-- [Evidencias](#-evidencias-de-funcionamiento)
-- [Mejoras futuras](#-mejoras-futuras)
-- [Desarrollador](#-desarrollador)
-- [Licencia](#-licencia)
+- [Características principales](#caracteristicas-principales)
+- [Cómo funciona el cálculo](#como-funciona-el-calculo)
+- [Tecnologías utilizadas](#tecnologias-utilizadas)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Instalación y ejecución](#instalacion-y-ejecucion)
+- [Configuración de la tarifa](#configuracion-de-la-tarifa)
+- [Ejemplo de salida](#ejemplo-de-salida)
+- [Evidencias](#evidencias-de-funcionamiento)
+- [Mejoras futuras](#mejoras-futuras)
+- [Desarrollador](#desarrollador)
+- [Licencia](#licencia)
 
+<a name="caracteristicas-principales"></a>
 ## ✨ Características principales
 
 ### ⚙️ Cálculo automático al iniciar
@@ -44,8 +46,9 @@ Los valores `tarifa.base` y `tarifa.impuesto` se leen desde `application.propert
 - **`runner/TarifaRunner.java`** → orquesta la ejecución y la presentación del resultado.
 - **`SimuladorTarifasApplication.java`** → punto de entrada de la aplicación Spring Boot.
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
+<a name="como-funciona-el-calculo"></a>
 ## 🧮 Cómo funciona el cálculo
 
 La fórmula aplicada por `TarifaService` es:
@@ -60,8 +63,9 @@ Por ejemplo, con los valores por defecto del proyecto:
 - **Impuesto:** 0.19 (19%)
 - **Tarifa final:** 150000 + (150000 × 0.19) = **178500**
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
+<a name="tecnologias-utilizadas"></a>
 ## 🛠️ Tecnologías utilizadas
 
 - **Java 17**
@@ -69,8 +73,9 @@ Por ejemplo, con los valores por defecto del proyecto:
 - **Maven** — Gestión de dependencias y construcción del proyecto
 - **Git / GitHub** — Control de versiones y almacenamiento del proyecto
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
+<a name="estructura-del-proyecto"></a>
 ## 📁 Estructura del proyecto
 
 ```
@@ -94,8 +99,9 @@ SimuladorTarifas/
 └── .gitignore         # Archivos y carpetas excluidos de Git
 ```
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
+<a name="instalacion-y-ejecucion"></a>
 ## ⚙️ Instalación y ejecución
 
 **1. Clonar el repositorio**
@@ -122,8 +128,9 @@ cd SimuladorTarifas
 
 Al iniciar, la aplicación imprimirá el resultado del cálculo directamente en la consola.
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
+<a name="configuracion-de-la-tarifa"></a>
 ## ⚙️ Configuración de la tarifa
 
 Los valores utilizados para el cálculo se definen en:
@@ -139,9 +146,10 @@ tarifa.impuesto=0.19
 
 Puedes modificar estos valores para simular diferentes escenarios sin cambiar el código Java.
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
-## 🖥️ Ejemplo de salida
+<a name="ejemplo-de-salida"></a>
+## 💻 Ejemplo de salida
 
 ```
 === Simulador de Tarifas ===
@@ -150,16 +158,18 @@ Impuesto: 0.19
 Tarifa final: 178500.0
 ```
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
+<a name="evidencias-de-funcionamiento"></a>
 ## 📸 Evidencias de funcionamiento
 
 **Ejecución del proyecto**
 
-![Ejecución del Simulador de Tarifas](docs/ejecucion.png)
+![Ejecución del Simulador de Tarifas](docs/evidencia-ejecucion.png)
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
+<a name="mejoras-futuras"></a>
 ## 🔮 Mejoras futuras
 
 Como posibles ampliaciones del proyecto se plantean:
@@ -172,22 +182,24 @@ Como posibles ampliaciones del proyecto se plantean:
 - Documentación de la API mediante Swagger / OpenAPI.
 - Interfaz web para simular tarifas de forma interactiva.
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
 
-## 👨‍💻 Desarrollador
+<a name="desarrollador"></a>
+## 🎓 Desarrollador
 
 <img src="docs/johana.png" width="120" height="120" style="border-radius: 50%;" alt="Foto de perfil"/>
+
+Proyecto desarrollado como parte de las actividades académicas del programa de Desarrollo de Software Backend de la Fundación Universitaria Compensar.
 
 - **Estudiante:** Johana Jazmín Saavedra Tafur
 - **Institución:** Fundación Universitaria Compensar
 - **Proyecto:** Simulador de Tarifas
 
-Proyecto desarrollado como parte de las actividades académicas del programa de Desarrollo de Software Backend de la Fundación Universitaria Compensar.
+**[⬆ Volver al índice](#indice)**
 
-**[⬆ Volver al índice](#-índice)**
-
+<a name="licencia"></a>
 ## 📄 Licencia
 
 Este proyecto fue desarrollado con fines académicos como parte del proceso de formación en desarrollo de software backend.
 
-**[⬆ Volver al índice](#-índice)**
+**[⬆ Volver al índice](#indice)**
