@@ -178,11 +178,11 @@ Como posibles ampliaciones del proyecto se plantean:
 
 <img src="docs/johana.png" width="120" height="120" style="border-radius: 50%;" alt="Foto de perfil"/>
 
-Proyecto desarrollado como parte de las actividades académicas del programa de Desarrollo de Software Backend de la Fundación Universitaria Compensar.
-
 - **Estudiante:** Johana Jazmín Saavedra Tafur
 - **Institución:** Fundación Universitaria Compensar
 - **Proyecto:** Simulador de Tarifas
+
+Proyecto desarrollado como parte de las actividades académicas del programa de Desarrollo de Software Backend de la Fundación Universitaria Compensar.
 
 **[⬆ Volver al índice](#-índice)**
 
